@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^students/?$ students.php [NC,L]
+RewriteRule ^students/([0-9]+)/?$ students.php?id=$1 [NC,L]
+RewriteRule ^kpop_dancers/?$ kpop_dancers.php [NC,L]
+RewriteRule ^kpop_dancers/([0-9]+)/?$ kpop_dancers.php?id=$1 [NC,L]
+SetEnvIf Authorization .+ HTTP_AUTHORIZATION=$0
